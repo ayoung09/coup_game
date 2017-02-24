@@ -13,7 +13,7 @@ export const SWITCH_PLAYER = 'SWITCH_PLAYER';
 //court deck
 export const BUILD_DECK = 'BUILD_DECK';
 
-export const EXCHANGE_CARDS = 'EXCHANGE_CARDS';
+export const TAKE_TOP_TWO_CARDS = 'TAKE_TOP_TWO_CARDS';
 
 export const SHUFFLE_DECK = 'SHUFFLE_DECK';
 
@@ -41,6 +41,16 @@ export const BLOCK_ASSASSINATION = 'BLOCK_ASSASSINATION';
 //other
 export const ACCUSE_OF_LIE = 'ACCUSE_OF_LIE';
 
+
+//my cards
+export const RECEIVE_ONE_CARD = 'RECEIVE_ONE_CARD';
+
+export const RECEIVE_TWO_CARDS = 'RECEIVE_TWO_CARDS';
+
 export const REVEAL_CARD = 'REVEAL_CARD';
 
 export const KILL_CARD = 'KILL_CARD';
+
+export const RETURN_CARD_TO_DECK = 'RETURN_CARD_TO_DECK';
+
+export const TOGGLE_CARDS = 'TOGGLE_CARDS';

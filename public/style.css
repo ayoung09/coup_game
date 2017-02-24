@@ -1,7 +1,9 @@
-#card-1 {
-  display: inline;
+.players-bar > .row {
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
-#card-2 {
-  display: inline;
+.players-bar > .row > .col-xs-4 {
+  display: inline-block;
+  float: none;
 }

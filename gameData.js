@@ -9,6 +9,7 @@ const characters = [{
   effect: 'Take 3 coins',
   counteraction: 'Blocks foreign aid',
   image: path.join(__dirname, 'duke.png'),
+  isAlive: true,
 }, {
   id: 2,
   name: 'Assassin',
@@ -16,6 +17,7 @@ const characters = [{
   effect: 'Pay 3 coins',
   counteraction: null,
   image: path.join(__dirname, 'assassin.png'),
+  isAlive: true,
 }, {
   id: 3,
   name: 'Ambassador',
@@ -23,6 +25,7 @@ const characters = [{
   effect: 'Exchange cards with Court Deck',
   counteraction: 'Blocks stealing',
   image: path.join(__dirname, 'ambassador.png'),
+  isAlive: true,
 }, {
   id: 4,
   name: 'Captain',
@@ -30,6 +33,7 @@ const characters = [{
   effect: 'Take 2 coins from another player',
   counteraction: 'Blocks stealing',
   image: path.join(__dirname, 'captain.png'),
+  isAlive: true,
 }, {
   id: 5,
   name: 'Contessa',
@@ -37,6 +41,7 @@ const characters = [{
   effect: null,
   counteraction: 'Blocks assassination',
   image: path.join(__dirname, 'contessa.png'),
+  isAlive: true,
 }];
 
 const actions = [{

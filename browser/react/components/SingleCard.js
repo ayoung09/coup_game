@@ -4,7 +4,7 @@ const SingleCard = (props) => {
   const cardView = props.cardView;
 
   return (
-      <img className="card-thumbnail" src={cardView} />
+    <img src={cardView} alt="" />
   );
 };
 

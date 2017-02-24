@@ -9,21 +9,11 @@ const PlayerCard = (props) => {
 
 
   return (
-    <div className="col-md-4">
-      <div className="thumbnail">
-        <h4>
-          <span>{ player.name }</span>
-        </h4>
-
-          <SingleCard cardView={char1Img} />
-          <SingleCard cardView={char2Img} />
-
-        <div className="caption">
-          <h5>
-            <span>Coins: { player.coins }</span>
-          </h5>
-        </div>
-      </div>
+    <div className="col-md-4 portfolio-item">
+            <img className="img-responsive" src={char1Img} />
+            <img className="img-responsive" src={char2Img} />
+        <h4>{ player.name }</h4>
+        <h5>Coins: { player.coins }</h5>
     </div>
   );
 };
