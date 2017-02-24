@@ -15,10 +15,12 @@ const loginReducer = (state = initialLoginState, action) => {
     case RECEIVE_GAME_DATA:
       newState.characters = action.characters;
       newState.actions = action.actions;
+      console.log('game data received! new state is: ', newState);
       break;
 
     case CREATE_NEW_PLAYER:
       newState.players = newState.players.concat(action.newPlayer);
+      console.log('new player created! new state is: ', newState);
       break;
 
     case ENTER_GAME:

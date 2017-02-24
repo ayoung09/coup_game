@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Login from '../components/Login';
+import EnterGame from '../components/EnterGame';
 import store from '../../store';
 import { createNewPlayer } from '../../redux/action-creators/login';
+
 
 const newPlayer = {
   socketId: null,
@@ -18,7 +20,8 @@ class LoginContainer extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      inputValue: ''
+      inputValue: '',
+      playerCreated: false,
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -35,17 +38,23 @@ class LoginContainer extends React.Component {
     store.dispatch(createNewPlayer(newPlayer));
 
     this.setState({
-      inputValue: ''
+      inputValue: '',
+      playerCreated: true,
     });
   }
 
   render() {
     return (
-      <Login
-        handleChange={this.handleChange}
-        handleSubmit={this.handleSubmit}
-        inputValue={this.state.inputValue}
-      />
+      <div>
+        <Login
+          handleChange={this.handleChange}
+          handleSubmit={this.handleSubmit}
+          inputValue={this.state.inputValue}
+          playerCreated={this.state.playerCreated}
+        />
+
+        {this.state.playerCreated && <EnterGame />}
+      </div>
     );
   }
 }
@@ -58,6 +67,4 @@ function mapDispatchToProps(dispatch) {
   return {};
 }
 
-const LoginContainer = connect(mapStateToProps, mapDispatchToProps)(LoginContainer);
-
-export default LoginContainer;
+export default connect(mapStateToProps, mapDispatchToProps)(LoginContainer);
