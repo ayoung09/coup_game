@@ -1,0 +1,7 @@
+export const RECEIVE_GAME_DATA = 'RECEIVE_GAME_DATA';
+
+export const CREATE_NEW_PLAYER = 'CREATE_NEW_PLAYER';
+
+export const ENTER_GAME = 'ENTER_GAME';
+
+export const SWITCH_PLAYER = 'SWITCH_PLAYER';
