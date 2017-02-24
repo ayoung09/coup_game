@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Login from '../components/Login';
 import EnterGame from '../components/EnterGame';
 import store from '../../store';
-import { createNewPlayer } from '../../redux/action-creators/login';
+import { createNewPlayer, enterGame } from '../../redux/action-creators/login';
 
 
 const newPlayer = {
@@ -43,6 +43,10 @@ class LoginContainer extends React.Component {
     });
   }
 
+  activateGame () {
+    store.dispatch(enterGame(true));
+  }
+
   render() {
     return (
       <div>
@@ -53,7 +57,7 @@ class LoginContainer extends React.Component {
           playerCreated={this.state.playerCreated}
         />
 
-        {this.state.playerCreated && <EnterGame />}
+        {this.state.playerCreated && <EnterGame activateGame={this.activateGame} />}
       </div>
     );
   }

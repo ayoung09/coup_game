@@ -1,3 +1,7 @@
-.card-thumbnail{
+#card-1 {
+  display: inline;
+}
+
+#card-2 {
   display: inline;
 }
