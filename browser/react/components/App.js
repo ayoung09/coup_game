@@ -10,7 +10,24 @@ const App = () => {
   return (
     <div id="main" className="container-fluid">
       <PlayersBarContainer />
-      <MyCardsContainer />
+
+        <div className="row">
+        <div className="col-lg-12">
+
+          <ActionBoxContainer />
+
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-lg-12">
+
+          <CourtDeckContainer />
+          <MyCardsContainer />
+
+        </div>
+      </div>
+
     </div>
   );
 };

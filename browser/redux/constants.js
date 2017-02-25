@@ -19,6 +19,8 @@ export const SHUFFLE_DECK = 'SHUFFLE_DECK';
 
 export const PICK_RANDOM_CARD = 'PICK_RANDOM_CARD';
 
+export const ADD_CARD_TO_DECK = 'ADD_CARD_TO_DECK';
+
 
 //actions
 export const TAKE_INCOME = 'TAKE_INCOME';
