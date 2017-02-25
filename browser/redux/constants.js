@@ -31,6 +31,8 @@ export const COUP = 'COUP';
 
 export const STEAL = 'STEAL';
 
+export const TOGGLE_INFO = 'TOGGLE_INFO';
+
 
 //counteractions
 export const BLOCK_STEAL = 'BLOCK_STEAL';
